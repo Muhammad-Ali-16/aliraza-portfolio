@@ -15,7 +15,7 @@ https://alirazaweb.netlify.app/
 ## How to Use
 1. Clone or download this repository:  
    ```bash
-   git clone https://github.com/Muhammad-Ali-16/personal-portfolio.git
+   git clone https://github.com/Muhammad-Ali-16/aliraza-portfolio.git
    ```  
 2. Install dependencies (Node.js packages):  
    ```bash
