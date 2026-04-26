@@ -3,7 +3,7 @@
 This is my personal portfolio website — a clean, responsive site built to showcase my skills, projects and contact info. It includes a typewriter effect for dynamic text display (using an npm package) to make the intro section more engaging.
 
 ## Live Demo
-https://aliraza-personalportfolio.netlify.app/
+https://alirazaweb.netlify.app/
 
 **Features:**
 - Responsive layout (works well on desktop and mobile)  
