@@ -1,10 +1,10 @@
 import SectionHeading from "../common/SectionHeading"
-import weatherapp from '../../assets/sigma-storm.jpg'
-import restaurant from '../../assets/grill-restaurant.jpg'
-import chatbot from '../../assets/abacus-ai.jpg'
-import carrental from '../../assets/luxe-drive.jpg'
-import bitmatrix from '../../assets/bitmatrix.jpg'
-import quizapp from '../../assets/quiz-app.jpg'
+import turmet from '../../assets/turmet.png'
+import restfolio from '../../assets/restfolio.png'
+import bitmatrix from '../../assets/bitmatrix.png'
+import quizapp from '../../assets/quizzyfy.png'
+import luxeDrive from '../../assets/luxedrive.png'
+import sigmaStorm from '../../assets/sigmastorm.png'
 
 
 import { useState } from "react"
@@ -20,15 +20,15 @@ function Portfolio() {
   const PortfolioWork = [
     {
       Id: '1',
-      Title: 'Sigma-Storm',
-      Category: 'Weather App',
-      Info: 'Sigma-Storm is a responsive weather application that provides real-time weather data for any location. It uses API integration to deliver accurate forecasts with a clean and intuitive UI.',
+      Title: 'Turmet',
+      Category: 'Travel Agency App',
+      Info: 'Turmet is a responsive travel agency application that helps users discover destinations, compare packages, and book trips with ease. It features a clean, intuitive UI backed by real-time data for flights, hotels, and tour packages.',
       Client: 'Personal Project',
-      Technologies: 'React, Tailwind CSS and OpenWeather API',
-      Industry: 'Weather & Climate',
-      Date: 'August 11, 2025',
-      UrlLink: 'https://sigmastorm.netlify.app/',
-      Img: weatherapp
+      Technologies: 'HTML, Tailwind CSS and React',
+      Industry: 'Travel & Tourism',
+      Date: 'November, 2025',
+      UrlLink: 'https://turmet.netlify.app/',
+      Img: turmet
     },
     {
       Id: '2',
@@ -38,49 +38,25 @@ function Portfolio() {
       Client: 'Personal Project',
       Technologies: 'HTML, Tailwind CSS and React',
       Industry: 'Food & Beverage',
-      Date: 'October 10, 2025',
+      Date: 'October, 2025',
       UrlLink: 'https://restfolio.netlify.app/',
-      Img: restaurant
+      Img: restfolio
     },
     {
       Id: '3',
-      Title: 'Abacus AI',
-      Category: 'AI Chatbot',
-      Info: 'Abacus AI is an interactive web application that allows users to chat with an AI in real time. It uses React and Tailwind for a responsive UI and integrates an external API for intelligent responses.',
-      Client: 'Personal Project',
-      Technologies: 'HTML, React, Tailwind CSS and Gemini API',
-      Industry: 'Artificial Intelligence',
-      Date: 'August 15, 2025',
-      UrlLink: 'https://abacusai.netlify.app/',
-      Img: chatbot
-    },
-    {
-      Id: '4',
-      Title: 'Luxe-Drive',
-      Category: 'Car Rental Website',
-      Info: 'Luxe-Drive is a sleek, multi-section landing site for luxury vehicle rentals and chauffeur services. It highlights premium vehicle types, booking options, and professional drivers within a polished, responsive design.',
-      Client: 'Personal Project',
-      Technologies: 'HTML, CSS, JavaScript and Bootstrap',
-      Industry: 'Car Rental',
-      Date: 'February 08, 2024',
-      UrlLink: 'https://luxury-drive.netlify.app/',
-      Img: carrental
-    },
-    {
-      Id: '5',
       Title: 'BitMatrix',
       Category: 'IT Solutions & Business Services',
       Info: 'BitMatrix is a professional business solutions website showcasing IT services and digital transformation offerings. It includes service sections, modern layouts, and responsive design for an engaging user experience.',
       Client: 'Personal Project',
       Technologies: 'HTML, Tailwind CSS, React and Swiper.JS',
       Industry: 'Information Technology / Business Solutions',
-      Date: 'August 20, 2025',
+      Date: 'August, 2025',
       UrlLink: 'https://bit-matrix.netlify.app/',
       Img: bitmatrix
     },
     {
-      Id: '6',
-      Title: 'Quiz App',
+      Id: '4',
+      Title: 'Quizzzyfy',
       Category: 'Education ',
       Info: 'Quiz App is an interactive platform for answering multiple-choice questions across various topics. It features a responsive design, dynamic score tracking, and smooth user experience using React components.',
       Client: 'Personal Project',
@@ -89,6 +65,30 @@ function Portfolio() {
       Date: '2025',
       UrlLink: 'https://quizzzyfy.netlify.app/',
       Img: quizapp
+    },
+    {
+      Id: '5',
+      Title: 'Luxe-Drive',
+      Category: 'Car Rental Website',
+      Info: 'Luxe-Drive is a sleek, multi-section landing site for luxury vehicle rentals and chauffeur services. It highlights premium vehicle types, booking options, and professional drivers within a polished, responsive design.',
+      Client: 'Personal Project',
+      Technologies: 'HTML, CSS, JavaScript and Bootstrap',
+      Industry: 'Car Rental',
+      Date: 'February, 2024',
+      UrlLink: 'https://luxury-drive.netlify.app/',
+      Img: luxeDrive
+    },
+    {
+      Id: '6',
+      Title: 'Sigma-Storm',
+      Category: 'Weather App',
+      Info: 'Sigma-Storm is a responsive weather application that provides real-time weather data for any location. It uses API integration to deliver accurate forecasts with a clean and intuitive UI.',
+      Client: 'Personal Project',
+      Technologies: 'React, Tailwind CSS and OpenWeather API',
+      Industry: 'Weather & Climate',
+      Date: 'August, 2025',
+      UrlLink: 'https://sigmastorm.netlify.app/',
+      Img: sigmaStorm
     }
   ]
 
@@ -99,7 +99,7 @@ function Portfolio() {
         <div className="portfolio-content max-w-screen-2xl mx-auto mt-15 xl:mt-20">
 
 
-          <div className="columns-1 lg:columns-2 xl:columns-3 gap-4 relative mx-8 mb-4 cursor-pointer" >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 relative mx-8 mb-4 cursor-pointer" >
             {PortfolioWork.map((work) => (
               <div key={work.Id}>
                 <div className="relative overflow-hidden mb-4 group rounded-lg " onClick={() => { HandleProjectDetails(work) }}>
@@ -125,7 +125,10 @@ function Portfolio() {
                       </button>
 
                       <div className="flex flex-col lg:flex-row space-x-4">
-                        <img src={activeProject.Img} alt={`${activeProject.Category} Img`} className="lg:max-w-[400px] xl:max-w-xl mx-auto lg:mx-5 self-center lg:self-auto rounded-lg max-h-[500px]" />
+                        <img
+                          src={activeProject.Img}
+                          alt={`${activeProject.Category} Img`}
+                          className="lg:max-w-[400px] xl:max-w-xl mx-auto lg:mx-5 self-center lg:self-auto rounded-lg max-h-[500px] object-contain" />
 
                         <div>
                           <div className="info mt-4 lg:mt-0">
@@ -136,17 +139,62 @@ function Portfolio() {
                           <div className="details flex flex-col">
                             <h4 className="font-bold text-md lg:text-lg my-4">Project Details:</h4>
                             <ul className="space-y-5">
-                              <li><h4 className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">Client: <span className="font-light"> {activeProject.Client} </span> </h4></li>
-                              <li><h4 className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">Technologies: <span className="font-light"> {activeProject.Technologies} </span> </h4></li>
-                              <li><h4 className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">Industry:<span className="font-light"> {activeProject.Industry} </span> </h4></li>
-                              <li><h4 className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">Date: <span className="font-light"> {activeProject.Date} </span> </h4></li>
-                              <li><h4 className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">URL: <span className="font-light text-[var(--text-secondary)]"><a href={activeProject.UrlLink} target="_blank">{activeProject.UrlLink}</a></span> </h4></li>
+                              <li>
+                                <h4
+                                  className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">
+                                  Client: <span className="font-light"> {activeProject.Client} </span>
+                                </h4>
+                              </li>
+                              <li>
+                                <h4
+                                  className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">
+                                  Technologies: <span className="font-light"> {activeProject.Technologies} </span>
+                                </h4>
+                              </li>
+                              <li>
+                                <h4
+                                  className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">
+                                  Industry:<span className="font-light"> {activeProject.Industry} </span>
+                                </h4>
+                              </li>
+                              <li>
+                                <h4
+                                  className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">
+                                  Date: <span className="font-light"> {activeProject.Date} </span>
+                                </h4>
+                              </li>
+                              <li>
+                                <h4
+                                  className="border-b border-[var(--portfolio-border)] pb-3 font-semibold text-sm lg:text-[12px]">
+                                  URL: <span className="font-light text-[var(--text-secondary)]"><a href={activeProject.UrlLink} target="_blank">{activeProject.UrlLink}</a></span>
+                                </h4>
+                              </li>
 
                               <li className="portfolio-social-icons pb-3 text-lg lg:text-xl space-x-4">
-                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100086266104286"><i className="text-[var(--text-primary)] transition duration-250 hover:text-[#4267B2] bi bi-facebook"></i></a>
-                                <a target="_blank" href="https://www.instagram.com/m.ali._.raza/"><i className="text-[var(--text-primary)] transition duration-250 hover:text-transparent bg-clip-text bg-[radial-gradient(circle_at_30%_107%,#fdf497_0%,#fdf497_5%,#fd5949_45%,#d6249f_60%,#285AEB_90%)] bi bi-instagram "></i></a>
-                                <a target="_blank" href="https://www.linkedin.com/in/muhammad-ali18/"><i className="text-[var(--text-primary)] transition duration-250 hover:text-[#0A66C2] bi bi-linkedin"></i></a>
-                                <a target="_blank" href="https://github.com/Muhammad-Ali-16"><i className="text-[var(--text-primary)] transition duration-250 hover:text-[#24292e] bi bi-github"></i></a>
+                                <a
+                                  target="_blank"
+                                  href="https://www.facebook.com/profile.php?id=100086266104286">
+                                  <i className="text-[var(--text-primary)] transition duration-250 hover:text-[#4267B2] bi bi-facebook">
+                                  </i>
+                                </a>
+                                <a
+                                  target="_blank"
+                                  href="https://www.instagram.com/m.ali._.raza/">
+                                  <i className="text-[var(--text-primary)] transition duration-250 hover:text-transparent bg-clip-text bg-[radial-gradient(circle_at_30%_107%,#fdf497_0%,#fdf497_5%,#fd5949_45%,#d6249f_60%,#285AEB_90%)] bi bi-instagram ">
+                                  </i>
+                                </a>
+                                <a
+                                  target="_blank"
+                                  href="https://www.linkedin.com/in/muhammad-ali18/">
+                                  <i className="text-[var(--text-primary)] transition duration-250 hover:text-[#0A66C2] bi bi-linkedin">
+                                  </i>
+                                </a>
+                                <a
+                                  target="_blank"
+                                  href="https://github.com/Muhammad-Ali-16">
+                                  <i className="text-[var(--text-primary)] transition duration-250 hover:text-[#24292e] bi bi-github">
+                                  </i>
+                                </a>
                               </li>
                             </ul>
                           </div>

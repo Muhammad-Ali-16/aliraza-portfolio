@@ -8,7 +8,7 @@ function Summary() {
   ]
 
   const Experience = [
-    { id: '1', duration: 'Present', program: 'FrontEnd Development', instituteName: 'Fresher', description: 'Currently seeking internship opportunities to apply my skills in real-world projects and enhance my experience in web design and development.' },
+    { id: '1', duration: '2023 - Present', program: 'FrontEnd Development', instituteName: 'Fresher', description: 'Currently seeking internship opportunities to apply my skills in real-world projects and enhance my experience in web design and development.' },
   ]
 
   const Skills = [

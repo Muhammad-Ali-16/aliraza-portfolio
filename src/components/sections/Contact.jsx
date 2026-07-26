@@ -20,7 +20,7 @@ function Contact() {
             </div>
             <div>
               <h4 className='text-[var(--text-secondary)] text-lg mb-2 mt-5'>Email:</h4>
-              <p className='text-[var(--text-primary)]'>aliraza1.work@gmail.com <br />muhammadaliraza.mobile@gmail.com</p>
+              <p className='text-[var(--text-primary)]'>maliraza.inbox@gmail.com</p>
             </div>
 
             <div>
