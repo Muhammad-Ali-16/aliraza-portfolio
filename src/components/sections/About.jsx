@@ -44,7 +44,7 @@ function About() {
                   </h3>
                 </li>
                 <li ><h3 className="font-bold">From: <span className="font-normal">Karachi, Pakistan</span> </h3></li>
-                <a href="/personal-portfolio/Ali-Raza-Resume.pdf" download><button className="bg-[var(--button-color-2)] text-white px-7 py-4 rounded-full drop-shadow-lg/25 cursor-pointer mt-3 text-xs xl:text-[12px]">Download Resume</button></a>
+                <a href="/Ali-Raza-Resume.pdf" download ><button className="bg-[var(--button-color-2)] text-white px-7 py-4 rounded-full drop-shadow-lg/25 cursor-pointer mt-3 text-xs xl:text-[12px]">Download Resume</button></a>
               </ul>
             </div>
           </div>

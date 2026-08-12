@@ -104,7 +104,9 @@ function Portfolio() {
               <div key={work.Id}>
                 <div className="relative overflow-hidden mb-4 group rounded-lg " onClick={() => { HandleProjectDetails(work) }}>
                   <img
-                    src={work.Img} alt={`${work.Category} Img`}
+                    src={work.Img} 
+                    alt={`${work.Category} Img`}
+                    loading="lazy"
                     className="w-full h-auto block transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                   <div className="porfolio-details absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
