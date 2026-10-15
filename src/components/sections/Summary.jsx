@@ -3,7 +3,7 @@ import SectionHeading from "../common/SectionHeading"
 function Summary() {
 
   const Education = [
-    { duration: '2026 - 2030', program: 'BE Computer Systems Engineering', instituteName: 'Dawood University of Engineering and Technology (DUET)', description: 'Studying computer systems, programming, software development, and engineering fundamentals to build a strong foundation for a career in technology.' },
+    { duration: '2026 - 2030', program: 'BE Computer System Engineering', instituteName: 'Dawood University of Engineering and Technology (DUET)', description: 'Studying computer systems, programming, software development, and engineering fundamentals to build a strong foundation for a career in technology.' },
     {  duration: '2024 - 2026', program: 'Intermediate', instituteName: 'Aisha Bawany Govt. College', description: 'Studying pre-engineering subjects including Mathematics, Physics, and Chemistry to build a strong foundation for a career in technology.' },
     {  duration: '2022 - 2024', program: 'Matriculation', instituteName: 'Education Trust Nasra School', description: 'Completed Matriculation with Computer Science, developing an early interest in programming, technology and learned fundamental computing concepts.' }
  ]

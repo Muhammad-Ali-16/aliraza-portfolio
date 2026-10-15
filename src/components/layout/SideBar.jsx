@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.jpeg'
+import logo from '../../assets/logo.jpg'
 import NavLinks from '../common/NavLinks'
 import SocialIcons from '../common/SocialIcons'
 

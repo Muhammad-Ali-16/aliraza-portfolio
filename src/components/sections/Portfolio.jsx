@@ -1,10 +1,10 @@
 import SectionHeading from "../common/SectionHeading"
-import turmet from '../../assets/turmet.png'
-import restfolio from '../../assets/restfolio.png'
-import bitmatrix from '../../assets/bitmatrix.png'
-import quizapp from '../../assets/quizzyfy.png'
-import luxeDrive from '../../assets/luxedrive.png'
-import sigmaStorm from '../../assets/sigmastorm.png'
+import carttivo from '../../assets/carttivo.jpg'
+import turmet from '../../assets/turmet.jpg'
+import restfolio from '../../assets/restfolio.jpg'
+import bitmatrix from '../../assets/bit-matrix.jpg'
+import luxeDrive from '../../assets/luxury-drive.jpg'
+import sigmaStorm from '../../assets/sigmastorm.jpg'
 
 
 import { useState } from "react"
@@ -19,9 +19,19 @@ function Portfolio() {
 
   const PortfolioWork = [
     {
-      Id: '1',
+      Title: 'Carttivo',
+      Category: 'E-Commerce Website',
+      Info: 'Carttivo is a responsive e-commerce website that allows users to explore categories, and shop with ease. It features a clean, user-friendly interface with product listings, filtering, detailed product pages, cart, and wishlist functionality for a smooth online shopping experience.',
+      Client: 'Personal Project',
+      Technologies: 'HTML, Tailwind CSS and React',
+      Industry: 'E-Commerce',
+      Date: 'September, 2026',
+      UrlLink: 'https://carttivo.netlify.app/',
+      Img: carttivo
+    },
+    {
       Title: 'Turmet',
-      Category: 'Travel Agency App',
+      Category: 'Travel Agency Website',
       Info: 'Turmet is a responsive travel agency application that helps users discover destinations, compare packages, and book trips with ease. It features a clean, intuitive UI backed by real-time data for flights, hotels, and tour packages.',
       Client: 'Personal Project',
       Technologies: 'HTML, Tailwind CSS and React',
@@ -31,7 +41,6 @@ function Portfolio() {
       Img: turmet
     },
     {
-      Id: '2',
       Title: 'Restfolio',
       Category: 'Restaurant Website',
       Info: 'Restfolio is a modern, responsive landing page designed for showcasing a restaurant’s menu and services. It features visually appealing sections, smooth navigation, and a clear call-to-action for reservations.',
@@ -43,7 +52,6 @@ function Portfolio() {
       Img: restfolio
     },
     {
-      Id: '3',
       Title: 'BitMatrix',
       Category: 'IT Solutions & Business Services',
       Info: 'BitMatrix is a professional business solutions website showcasing IT services and digital transformation offerings. It includes service sections, modern layouts, and responsive design for an engaging user experience.',
@@ -55,19 +63,6 @@ function Portfolio() {
       Img: bitmatrix
     },
     {
-      Id: '4',
-      Title: 'Quizzzyfy',
-      Category: 'Education ',
-      Info: 'Quiz App is an interactive platform for answering multiple-choice questions across various topics. It features a responsive design, dynamic score tracking, and smooth user experience using React components.',
-      Client: 'Personal Project',
-      Technologies: 'HTML, CSS, React, JavaScript',
-      Industry: 'Education / E-Learning',
-      Date: '2025',
-      UrlLink: 'https://quizzzyfy.netlify.app/',
-      Img: quizapp
-    },
-    {
-      Id: '5',
       Title: 'Luxe-Drive',
       Category: 'Car Rental Website',
       Info: 'Luxe-Drive is a sleek, multi-section landing site for luxury vehicle rentals and chauffeur services. It highlights premium vehicle types, booking options, and professional drivers within a polished, responsive design.',
@@ -79,7 +74,6 @@ function Portfolio() {
       Img: luxeDrive
     },
     {
-      Id: '6',
       Title: 'Sigma-Storm',
       Category: 'Weather App',
       Info: 'Sigma-Storm is a responsive weather application that provides real-time weather data for any location. It uses API integration to deliver accurate forecasts with a clean and intuitive UI.',
@@ -100,9 +94,9 @@ function Portfolio() {
 
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 relative mx-8 mb-4 cursor-pointer" >
-            {PortfolioWork.map((work) => (
-              <div key={work.Id}>
-                <div className="relative overflow-hidden mb-4 group rounded-lg " onClick={() => { HandleProjectDetails(work) }}>
+            {PortfolioWork.map((work,i) => (
+              <div key={i}>
+                <div className="relative overflow-hidden mb-4 group rounded-lg border border-black/50" onClick={() => { HandleProjectDetails(work) }}>
                   <img
                     src={work.Img} 
                     alt={`${work.Category} Img`}
